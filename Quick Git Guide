@@ -15,8 +15,8 @@ IMPORTANT: DO THIS EVERY TIME YOU WORK ON A NEW TASK
 git branch branchname
 	this creates a new branch for you to make changes in (a branch is a basically copy of the current state of the code)
 	replace branchname with yourName/taskYouAreDoing
-	generally, you should do "git checkout master" before creating a branch, as in:
-		git checkout master
+	generally, you should do "git checkout origin/master" before creating a branch, as in:
+		git checkout origin/master
 		git branch yourName/taskYouAreDoing
 		git checkout yourName/taskYouAreDoing
 			can be shortened to git checkout -b yourName/taskYouAreDoing (this both creates a branch and checks out that branch)
@@ -61,7 +61,7 @@ git push origin branchname
 so, let's say you're starting a new task. generally, you'll do:
 	git status
 	git stash (if you've made changes you haven't committed but want to save for later)
-	git checkout origin master
+	git checkout origin/master
 	git pull origin master (update to latest code)
 	git branch yourName/taskYouAreDoing
 	git checkout yourName/taskYouAreDoing
