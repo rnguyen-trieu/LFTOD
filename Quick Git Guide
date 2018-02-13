@@ -1,0 +1,50 @@
+Quick Git Guide
+
+git clone http://url.com
+	clones a repository
+
+git pull origin branchname
+	updates your code with the code on this branch
+
+IMPORTANT: DO THIS EVERY TIME YOU WORK ON A NEW TASK
+git branch branchname
+	this creates a new branch for you to make changes in (a branch is a basically copy of the current state of the code)
+	replace branchname with yourName/taskYouAreDoing
+	generally, you should do "git checkout master" before creating a branch, as in:
+		git checkout master
+		git branch yourName/taskYouAreDoing
+		git checkout yourName/taskYouAreDoing
+			can be shortened to git checkout -b yourName/taskYouAreDoing (this both creates a branch and checks out that branch)
+
+git checkout branchname
+	this makes the branchname your current working branch
+
+git add filename
+	adds a file you've modified (files must be added before you can commit)
+git add -u
+	adds all tracked files you've modified
+git add .
+	adds all tracked and untracked files you've modified
+
+git stash
+	stashes changes you've made (basically saves without committing)
+	must be done before checkout out a different branch
+
+git stash apply
+	applies changes you've stashed to the current working branch
+
+git commit -m "Commit message goes here"
+	commits changes you've made (files must be added first, see above)
+	a commit is essentially a "save" of the current state of the code, making it possible to revert to this state if necessary
+	for your purposes, a commit message will always be necessary
+
+git status
+	gives you the current status of your branch (lists files you've modified and other things you shouldn't need to worry about)
+
+git push origin branchname
+	push your working branch (after committing changes) to the remote repository
+	once pushed, open a pull request on github
+	if you have problems pushing, let me know
+
+
+
