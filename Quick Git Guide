@@ -1,6 +1,11 @@
 Quick Git Guide
 
-git clone http://url.com
+This is meant as a quick rundown of commonly used Git commands and not by any means a comprehensive tutorial. 
+Git can get complicated, but the following commands should serve for most of your goals. 
+Refer to Git documentation or ask me if you have any questions.
+These commands assume you've downloaded git and are using the command line (thus at least need to have some vague familiarity with use of the terminal)
+
+git clone http://gitrepositoryurl.com
 	clones a repository
 
 git pull origin branchname
@@ -27,11 +32,18 @@ git add .
 	adds all tracked and untracked files you've modified
 
 git stash
-	stashes changes you've made (basically saves without committing)
-	must be done before checkout out a different branch
-
+	stashes changes you've made 
+	basically saves changes you've made and then reverts code back to the state before those changes were made
+	must be done before checking out a different branch
+	a stash is basically a stack of uncommitted changes
+		for example: if you change three files, then do git stash, those changes (in all 3 files) are put onto a stack and those files are reverted to their original state in your current branch
 git stash apply
 	applies changes you've stashed to the current working branch
+git stash push filename
+	pushes a file you've modified onto the stash stack
+git stash pop (best to avoid this one, i have it here mostly because if you know anything about a stack, it seems a given that there is a "pop" command)
+	pops the most recent stashed change off the stash stack and applies it to your code
+	use git stash apply instead until you're more comfortable with Git
 
 git commit -m "Commit message goes here"
 	commits changes you've made (files must be added first, see above)
@@ -45,6 +57,27 @@ git push origin branchname
 	push your working branch (after committing changes) to the remote repository
 	once pushed, open a pull request on github
 	if you have problems pushing, let me know
+
+so, let's say you're starting a new task. generally, you'll do:
+	git status
+	git stash (if you've made changes you haven't committed but want to save for later)
+	git checkout origin master
+	git pull origin master (update to latest code)
+	git branch yourName/taskYouAreDoing
+	git checkout yourName/taskYouAreDoing
+	git stash apply (if you want to apply changes you've stashed)
+	...do work...
+
+when you've done work, made progress, and reached a point on your task where you'd like to save your work:
+	git status
+	git add filename (or git add . or git add -u, see above)
+	git commit -m "Commit message here" 
+
+when you're ready to open a pull request (when your work is either done or very near to being done and you've committed the changes)
+	git push origin yourName/taskYouAreDoing
+	go on the GitHub repository and open a pull request (a pull request is basically saying your work is done and you'd like it to be reviewed and merged into the main branch (known as master))
+
+
 
 
 
