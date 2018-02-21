@@ -1,10 +1,16 @@
 {
-  "name": "angular-seed",
+  "name": "LFTOD",
   "private": true,
-  "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "version": "1.0.0",
+  "description": "Base Application for Capstone",
+  "repository": "https://github.com/rnguyen-trieu/LFTOD",
   "license": "MIT",
+  "dependencies": {
+    "express": "^4.0.0"
+  },
+  "engines": {
+    "node": "8.9.1"
+  },
   "devDependencies": {
     "bower": "^1.7.7",
     "http-server": "^0.9.0",
@@ -23,7 +29,7 @@
     "postupdate-deps": "bower update",
 
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1 ./app",
+    "start": "node server/server.js",
 
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
