@@ -1,7 +1,7 @@
 {
   "name": "LFTOD",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Base Application for Capstone",
   "repository": "https://github.com/rnguyen-trieu/LFTOD",
   "license": "MIT",
