@@ -2,18 +2,24 @@
 <html>
 <head>
 <style>
+
 ul {
+
     list-style-type: none;
     font: 20px arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+
 li:link {
     text-decoration: none;
 }
+
 li {
     display: inline;
 }
+
+
 #rcorners2 {
     border-radius: 25px;
     border: 2px solid #ffffff;
@@ -23,9 +29,10 @@ li {
     width: 200px;
     height: 30px;
 	text-align: center;
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 }
+
 #rcorners3 {
     border-radius: 25px;
     border: 2px solid #ffffff;
@@ -35,11 +42,12 @@ li {
     width: 200px;
     height: 30px;
 	text-align: center;
-	position:absolute;
-	bottom:0px;   
+	position:fixed;
+	bottom:0px;
 	right:25%;
 	left:40%;
 }
+
 #rcorners4 {
     border-radius: 25px;
     border: 2px solid #ffffff;
@@ -49,48 +57,60 @@ li {
     width: 200px;
     height: 30px;
 	text-align: center;
-	position:absolute;
-	bottom:0px;   
+	position:fixed;
+	bottom:0px;
 	left:80%
 }
+
 body {
     background-image: url("openroad.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
   }
+
 div.transbox {
   border-radius: 25px;
-  margin: 30px;
+  margin: 30px 30px 100px;
   background-color: #ffffff;
   border: 1px solid black;
-  opacity: 0.6;
+  opacity: 0.8;
   filter: alpha(opacity=60); /* For IE8 and earlier */
 }
+
 div.transbox p {
   margin: 5%;
   font-weight: bold;
   color: #000000;
 }
+
 h1	{
 	text-indent:10px;
 }
+
 h2	{
 	text-indent:25px;
 }
+
 </style>
 </head>
 
 <body>
+
 <ul>
   <li><a href="homePage.html">Home</a></li>
   <li><a href="About.html">About</a></li>
   <li><a href="Data.html">Data</a></li>
 </ul>
 
-<iframe width="100%" height="750px" src="http://ullragincajuns.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=191cab29a0704630b22f9db7cceb0d26" frameborder="0" scrolling="no"></iframe>
+<div class="background">
+  <div class="transbox">
+  <h1>About Project</h1>
+  <br/>
+  <h2>Lafayette Smart City</h2>
+    <p>"In 2016, there was 15,757 reported crime incidents in Lafayette parish. 57.62% of the reported incidents are car accidents. Below is a pie chart of all reported accidents in Lafayette." <br> <center><img src="pasted image 0.png"><br> "Louisiana has the seventh highest rate of fatal traffic crashes in the nation.<a href="http://www.tripnet.org/docs/LA_Lafayette_Transportation_by_the_Numbers_TRIP_Release_03-29-2017.php">*</a>"</center></p>
   </div>
 </div>
-
 <a href="Problem.html"><p id="rcorners2">The Problem</p></a>
 <a href="Solution.html"><p id="rcorners3">The Solution</p></a>
 <a href="map.html"><p id="rcorners4">View Map</p></a>
