@@ -1,118 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-
-ul {
-
-    list-style-type: none;
-    font: 20px arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-li:link {
-    text-decoration: none;
-}
-
-li {
-    display: inline;
-}
-
-
-#rcorners2 {
-    border-radius: 25px;
-    border: 2px solid #ffffff;
-	background-color: white;
-	opacity: 0.6;
-    padding: 20px;
-    width: 200px;
-    height: 30px;
-	text-align: center;
-	position: fixed;
-	bottom: 0px;
-}
-
-#rcorners3 {
-    border-radius: 25px;
-    border: 2px solid #ffffff;
-	background-color: white;
-	opacity: 0.6;
-    padding: 20px;
-    width: 200px;
-    height: 30px;
-	text-align: center;
-	position:fixed;
-	bottom:0px;
-	right:25%;
-	left:40%;
-}
-
-#rcorners4 {
-    border-radius: 25px;
-    border: 2px solid #ffffff;
-	background-color: white;
-	opacity: 0.6;
-    padding: 20px;
-    width: 200px;
-    height: 30px;
-	text-align: center;
-	position:fixed;
-	bottom:0px;
-	left:80%
-}
-
-body {
-    background-image: url("openroad.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-  }
-
-div.transbox {
-  border-radius: 25px;
-  margin: 30px 30px 100px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.8;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-}
-
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
-}
-
-h1	{
-	text-indent:10px;
-}
-
-h2	{
-	text-indent:25px;
-}
-
-</style>
+<link rel="stylesheet" type="text/css" href="home.css">
 </head>
+    <div id="text">
 
 <body>
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+    <center>
+      <a href="#"><li><a href="index.html">Home</li></a></a>
+      <a href="#"><li><a href="About.html">About</li></a></a>
+      <a href="#"><li><a href="Data.html">Data</li></a>
+      <a href="#"><li><a href="Problem.html">Problem</li></a>
+      <a href="#"><li><a href="Solution.html">Solution</li></a>
+      <a href="#"><li><a href="Map.html">Map</li></a>
+      </center>
+    </ul>
+  </div>
+</nav>
 
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="About.html">About</a></li>
-  <li><a href="Data.html">Data</a></li>
-</ul>
 
 <div class="background">
   <div class="transbox">
-  <h1>About Project</h1>
-  <br/>
-  <h2>Lafayette Smart City</h2>
+  <div id="bg">
+  <div id="magic-container">
+    <div id="blur-bg"></div>
+           <h1>Lafayette Smart City</h1>
     <p>"In 2016, there was 15,757 reported crime incidents in Lafayette parish. 57.62% of the reported incidents are car accidents. Below is a pie chart of all reported accidents in Lafayette." <br> <center><img src="pasted image 0.png"><br> "Louisiana has the seventh highest rate of fatal traffic crashes in the nation.<a href="http://www.tripnet.org/docs/LA_Lafayette_Transportation_by_the_Numbers_TRIP_Release_03-29-2017.php">*</a>"</center></p>
   </div>
+
+    </div>
+  </div>
 </div>
-<a href="Problem.html"><p id="rcorners2">The Problem</p></a>
-<a href="Solution.html"><p id="rcorners3">The Solution</p></a>
-<a href="map.html"><p id="rcorners4">View Map</p></a>
+  </div>
+</div>
 </body>
 </html>

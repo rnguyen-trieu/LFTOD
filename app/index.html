@@ -4,6 +4,113 @@
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
+<style>
+  ul {
+
+    list-style-type: none;
+    font: 20px arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	word-spacing: 30px;
+}
+
+a:link{
+    text-decoration: none;
+	color:white;
+} 
+
+a:visited{
+    text-decoration: none;
+	color:white;
+} 
+
+li:link {
+    text-decoration: none;
+	
+}
+
+
+li {
+    display: inline;
+}
+
+
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #ffffff;
+	  background: rgb(34,34,34); /* for IE */
+  background: rgba(34,34,34,0.75);
+    padding: 20px;
+    width: 200px;
+    height:100px;
+	text-align: center;
+	position: fixed;
+	bottom:-10%
+	}
+
+#rcorners3 {
+    border-radius: 25px;
+    border: 2px solid #ffffff;
+	  background: rgb(34,34,34); /* for IE */
+  background: rgba(34,34,34,0.75);
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+	text-align: center;
+	position:fixed;
+	bottom:-10%;
+	right:25%;
+	left:40%;
+}
+
+#rcorners4 {
+    border-radius: 25px;
+    border: 2px solid #ffffff;
+	  background: rgb(34,34,34); /* for IE */
+  background: rgba(34,34,34,0.75);
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+	text-align: center;
+	position:fixed;
+	bottom:-10%;
+	left:80%
+	
+}
+p {
+  font-size:14pt;
+
+}
+
+body {
+    background-image: url("construction.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+h1	{
+	color: white;
+	font-family:Arial, Helvetica, sans-serif;
+}
+  </style>
+</head>
+
+<body>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="Data.html">Data</a></li>
+</ul>
+
+
+<center><h1>Lafayette Smart City Open Data</h1></center>
+<a href="Problem.html"><p id="rcorners2">The Problem</p></a>
+<a href="Solution.html"><p id="rcorners3">The Solution</p></a>
+<a href="map.html"><p id="rcorners4">View Map</p></a>
+
+
+ <!-- Angular!-->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My AngularJS App</title>
@@ -18,15 +125,7 @@
   <ul class="menu">
     <li><a href="#!/view1">view1</a></li>
     <li><a href="#!/view2">view2</a></li>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About.html">About</a></li>
-    <li><a href="Data.html">Data</a></li>
   </ul>
-
-  <p>Under Construction...</p>
-  <a href="Problem.html"><p id="rcorners2">The Problem</p></a>
-  <a href="Solution.html"><p id="rcorners3">The Solution</p></a>
-  <a href="map.html"><p id="rcorners4">View Map</p></a>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -47,5 +146,27 @@
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+<body>
+
+<ul>
+  <li><a href="homePage.html">Home</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="">Data</a></li>
+</ul>
+
+
+<p>Under Construction...</p>
+<a href="Problem.html"><p id="rcorners2">The Problem</p></a>
+<a href="Solution.html"><p id="rcorners3">The Solution</p></a>
+<a href="map.html"><p id="rcorners4">View Map</p></a>
 </body>
 </html>
