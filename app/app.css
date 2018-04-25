@@ -1,5 +1,15 @@
 /* app css stylesheet */
 
+ul {
+
+  list-style-type: none;
+  font: 20px arial, sans-serif;
+  margin: 0;
+  padding: 0;
+word-spacing: 30px;
+}
+
+
 #menuToggle
 {
   display: block;
@@ -37,7 +47,8 @@
 {
   display: block;
   width: 33px;
-  height: 4px;
+  height: 3.5px;
+  opacity: 75;
   margin-bottom: 5px;
   position: relative;
 
@@ -98,7 +109,7 @@
 #menu
 {
   position: absolute;
-  width: 250px;
+  width: 500px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -118,7 +129,7 @@
 #menu li
 {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 /*
