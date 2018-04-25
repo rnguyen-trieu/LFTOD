@@ -4,6 +4,7 @@
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
+
 <style>
   ul {
 
@@ -14,19 +15,24 @@
 	word-spacing: 30px;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+  font: 20px arial, sans-serif;
+}
 a:link{
     text-decoration: none;
 	color:white;
-} 
+}
 
 a:visited{
     text-decoration: none;
 	color:white;
-} 
+}
 
 li:link {
     text-decoration: none;
-	
+
 }
 
 
@@ -75,7 +81,7 @@ li {
 	position:fixed;
 	bottom:-10%;
 	left:80%
-	
+
 }
 p {
   font-size:14pt;
@@ -93,6 +99,7 @@ h1	{
 	font-family:Arial, Helvetica, sans-serif;
 }
   </style>
+
 </head>
 
 <body>
@@ -138,6 +145,7 @@ h1	{
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
+
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
@@ -146,27 +154,5 @@ h1	{
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
-</body>
-</html>
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="home.css">
-</head>
-
-<body>
-
-<ul>
-  <li><a href="homePage.html">Home</a></li>
-  <li><a href="About.html">About</a></li>
-  <li><a href="">Data</a></li>
-</ul>
-
-
-<p>Under Construction...</p>
-<a href="Problem.html"><p id="rcorners2">The Problem</p></a>
-<a href="Solution.html"><p id="rcorners3">The Solution</p></a>
-<a href="map.html"><p id="rcorners4">View Map</p></a>
 </body>
 </html>
