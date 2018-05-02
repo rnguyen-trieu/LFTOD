@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+    <div id="text">
+
+<body>
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+    <center>
+      <a href="#"><li><a href="homePage.html">Home</a></li></a>
+      <a href="#"><li><a href="About.html">About</a></li></a>
+      <a href="#"><li><a href="Data.html">Data</li></a>
+      <a href="#"><li><a href="Problem.html">Problem</li></a>
+      <a href="#"><li><a href="Solution.html">Solution</li></a>
+      <a href="#"><li><a href="Map.html">Map</li></a>
+      </center>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="background">
+  <div class="transbox">
+  <div id="bg">
+  <div id="magic-container">
+    <div id="blur-bg"></div>
+          <h1>The Problem</h1>
+      <br />
+           <p>According to the open data available on the site created for the Cajun Code Fest competition, a social issue facing our community of Lafayette is the road conditions. <br /><br />
+In 2016, <b>34%</b> of all car accidents reported in Lafayette occurred on just ten of the many roads that were reported to have either poor or very poor road conditions. <br /><br />
+According to the Daily Advertiser, <b>60%</b> of major local and state roads in the Lafayette area are in <b>poor or mediocre condition.</b> <br /><br />
+A study released earlier this year shows Lafayette drivers pay an average of <b>$2,024</b> per year because of roads that are deteriorated, congested or lack safety features. <br /><br />
+The correlation between <b>poor road conditions</b> and the number of <b>car accidents</b> needs to be highlighted and discussed amongst both concerned citizens and Lafayette city government officials.
+</p>
+
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+</body>
+</html>
