@@ -205,6 +205,17 @@ h1	{
 	font-family:Avenir Next, Arial, sans-serif;
 }
 
+h2	{
+	color: white;
+	font-family:Avenir Next, Arial, sans-serif;
+  text-decoration: underline;
+}
+
+b	{
+	color: #68FEC2;
+	font-family:Avenir Next, Arial, sans-serif;
+}
+
 body {
 	color:white;
 	  border-radius: 25px;
